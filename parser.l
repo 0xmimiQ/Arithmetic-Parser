@@ -10,12 +10,16 @@
                         return INTEGER;
                     }
 
+0*[1-9]*            {
+                        yyerror("Syntax error: Illegal number"); 
+                    }
+
 [-+()=/*;]          { return *yytext; }
 
 [ \t\n]             ;
 
 .                   { 
-                        yyerror("Illegal character"); 
+                        yyerror("Syntax error: Illegal character"); 
                     }
 %%
 
