@@ -19,4 +19,4 @@ gcc lex.yy.c parser.tab.c
 
 # LICENSE
 
-[MIT]("./LICENSE")
+[MIT](./LICENSE.md)
